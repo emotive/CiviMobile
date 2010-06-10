@@ -34,7 +34,7 @@ var loginuser = Titanium.UI.createTextField({
 	value:'username',
 	height:35,
 	width:238,
-	top:225,
+	top:220,
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
 });
 
@@ -42,7 +42,15 @@ var loginpass = Titanium.UI.createTextField({
 	value:'password',
 	height:35,
 	width:238,
-	top:275,
+	top:267,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
+});
+
+var loginapi = Titanium.UI.createTextField({
+	value:'api key',
+	height:35,
+	width:238,
+	top:314,
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
 });
 
@@ -50,7 +58,7 @@ var loginurl = Titanium.UI.createTextField({
 	value:'url',
 	height:35,
 	width:238,
-	top:325,
+	top:361,
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED
 });
 
@@ -58,7 +66,7 @@ var loginbutton = Titanium.UI.createButton({
     title: 'Login',
 	height:43,
 	width:238,
-	top:375,
+	top:408,
 	backgroundImage:'images/button_green.png',
     color:'#fff',
     font:{fontWeight:'bold',fontSize:20}
@@ -72,5 +80,6 @@ loginbutton.addEventListener('click',function(e)
 
 scrollView.add(loginuser);
 scrollView.add(loginpass);
+scrollView.add(loginapi);
 scrollView.add(loginurl);
 scrollView.add(loginbutton);
