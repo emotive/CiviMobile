@@ -11,7 +11,8 @@ var summaryData = [
 ]; 
 var summaryView = Titanium.UI.createTableView({ 
 	data:summaryData, 
-	style:Titanium.UI.iPhone.TableViewStyle.GROUPED
+	style:Titanium.UI.iPhone.TableViewStyle.GROUPED,
+	backgroundColor: 'transparent'
 }); 
 
 window_summary.add(summaryView);
