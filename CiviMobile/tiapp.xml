@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+<id>com.emotivellc.civimobile</id>
+<name>CiviMobile</name>
+<version>1.0</version>
+<publisher>mbriney</publisher>
+<url>http://www.civicrm.org</url>
+<description>Mobile version of CiviCRM</description>
+<copyright>2010 by emotive, llc</copyright>
+<icon>default_app_logo.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+<guid>7fcfa975-7441-49ce-9d00-89c2e230abb2</guid>
+</ti:app>
