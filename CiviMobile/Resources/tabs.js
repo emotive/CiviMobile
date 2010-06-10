@@ -5,7 +5,7 @@ var tabGroup = Titanium.UI.createTabGroup();
 //Create windows for tabs
 
 var window_summary = Titanium.UI.createWindow({  
-    title:'Database Snapshot'
+    title:'Your Organization'
 });
 var window_search = Titanium.UI.createWindow({  
     title:'Search'
@@ -53,15 +53,7 @@ tabGroup.addTab(tab_reports);
 
 // Add content
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-window_summary.add(label1);
+Ti.include("tab-summary.js");
 
 Ti.include("tab-search.js");
 
