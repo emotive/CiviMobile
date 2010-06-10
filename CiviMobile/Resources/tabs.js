@@ -63,15 +63,7 @@ var label1 = Titanium.UI.createLabel({
 
 window_summary.add(label1);
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-window_search.add(label2);
+Ti.include("tab-search.js");
 
 
 Ti.include("tab-nearby.js");
