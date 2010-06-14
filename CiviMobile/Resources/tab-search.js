@@ -61,6 +61,9 @@ searchresults.addEventListener('click', function(e)
 	var prop = e.rowData.ContactID;
 	
 	Titanium.UI.createAlertDialog({title:'Open Record #',message:'custom value ' + prop}).show();
+	Ti.include("view-contact.js");
+
+
 });
 
 // add table view to the window
@@ -79,9 +82,11 @@ window_search.setRightNavButton(addbutton);
 
 // Set what happens when you click the add button
 
-addbutton.addEventListener('click',function(e)
+addbutton.addEventListener('click',function()
 {
-   alert("You clicked the button");
+   // alert("You clicked the button");
+   Ti.include("add-contact.js");
+
 });
 
 
